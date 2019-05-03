@@ -130,7 +130,7 @@ display: none;
 .about h1 {
   color: #E30712;
   text-transform: uppercase;
-  margin-top: 10px;
+  margin-top: 0;
   margin-bottom: 10px;
   font-family: "lora";
   font-size: calc(26px + (45 - 26) * ((100vw - 300px) / (1300)));
