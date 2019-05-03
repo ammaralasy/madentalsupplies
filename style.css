@@ -120,6 +120,9 @@ display: none;
   justify-content: center;
   align-self: center;
   border: 2px solid blue;
+  background-image: url(assets/dent-office.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .about {
   width: 90%;
@@ -131,7 +134,7 @@ display: none;
   color: #E30712;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 4vw;
   font-family: "lora";
   font-size: calc(26px + (45 - 26) * ((100vw - 300px) / (1300)));
 }
