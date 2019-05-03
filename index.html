@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>M.A For Dental Supplies</title>
+  <meta name="description" content="website for introducing our dental business">
+  <meta name="author" content="Ammar Alasbahi">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel='stylesheet' href='style.css'>
+  <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+
+</head>
+
+<body>
+  <nav>
+    <div class="logo"><img src="icons/ma-logo.png"></div>
+    <ul class="navbar">
+      <li class="navbar-item">
+        <div><img src="icons/home.svg"></div>
+        <div>home</div>
+      </li>
+      <li class="navbar-item">
+        <div><img src="icons/about.svg"></div>
+        <div>about</div>
+      </li>
+      <li class="navbar-item">
+        <div><img src="icons/brands.svg"></div>
+        <div>brands</div>
+      </li>
+      <li class="navbar-item">
+        <div><img src="icons/contact.svg"></div>
+        <div>contact</div>
+      </li>
+    </ul>
+  </nav>
+  <div class="container-slide">
+    <div id="slideshow">
+      <div><img src="assets/medental-sm-4.png" alt=""></div>
+      <div><img src="assets/protechno-sm.jpg" alt=""></div>
+    </div>
+  </div>
+<div class="intro-container">
+<div class="about">
+  <h1>about us</h1>
+  <p><b>Mohammed Alasbahi for tradig</b> dental supplies is one of the biggest and leading dental company in Yemen. Our Mission is to provide dental products of good quality to our customers across the whole of Yemen, given that our task is to expand our business activities to make it accesible for all customers and dealers across Yemen.</p>
+  <p>Since we were established in 1996, we provide  broad spectrum of products  for lab technicians and dentists at the time the dental sector was not given proper care in Yemen. We constantly work on finding  new partners every year which are able to cooperate with us to supply our  customers  the correct choice of  products that will help us implement our mission.</p>
+</div>
+</div>
+    <script type="text/javascript" src="jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/jquery.hypher.js"></script>
+    <script src="js/en-us.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#slideshow").slick({
+          dots: true,
+          arrows: true,
+          adaptiveHeight: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          autoplay: false,
+          autoplaySpeed: 1000,
+          prevArrow: $('.prev'),
+          nextArrow: $('.next')
+    });
+    $('.about p').hyphenate('en-us');
+      });
+    </script>
+</body>
+
+</html>
