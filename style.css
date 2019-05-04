@@ -120,9 +120,10 @@ display: none;
   justify-content: center;
   align-self: center;
   border: 2px solid blue;
-  background-image: url(assets/dent-office.png);
+  background-image: url(assets/dent-office.png) , url(assets/dent-lab.png);
+  background-position: center top, center bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 50%, 100% 50%;
 }
 .about {
   width: 90%;
