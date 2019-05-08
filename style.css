@@ -9,6 +9,12 @@
   font-style: normal;
   font-weight: 900;
 }
+@font-face {
+  font-family: 'lora-light';
+  src: url(fonts/lora-light.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
 * {
   box-sizing: border-box;
   text-decoration: none;
@@ -142,7 +148,7 @@ display: none;
   font-size: calc(26px + (45 - 26) * ((100vw - 300px) / (1300)));
 }
 .about p {
-  font-family: "lora";
+  font-family: "lora-light";
   font-size: calc(16px + (30 - 16) * ((100vw - 300px) / (1300)));
   margin: auto;
 }
@@ -155,6 +161,7 @@ display: none;
 }
 .brand-container {
   width: 100%;
+  display: none;
 }
 .logos {
   display: flex;
@@ -197,5 +204,47 @@ max-width: 200px;
   font-family: "lora";
   padding-top: 30px;
   padding-left: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+}
+.contact-container h1 {
+  color: #E30712;
+  text-transform: uppercase;
+  font-family: "lora";
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.contact-container ul {
+  /*position: relative;*/
+  display: flex;
+  width: 100%;
+  list-style: none;
+  align-items: center;
+}
+.contact-container ul li {
+  /*display: inline-block;
+  position: relative;*/
+}
+.contact-container ul img {
+  width: calc(18px + 3vw);
+  /*border: 2px solid #E30712;
+  border-radius: 50%;
+  padding: 5%;*/
+}
+.contact-container ul li:nth-of-type(1){
+  /*width: 15%;*/
+border: 2px solid #E30712;
+border-radius: 50%;
+padding: 1.5%;
+margin-bottom: 5px;
+margin-left: 10px;
+margin-right: 5px;
+text-align: center;
+}
+.contact-container ul li:nth-of-type(2) {
+width:85%;
+border: 2px solid blue;
+font-family: "lora-light";
+font-size: calc(16px + (30 - 16) * ((100vw - 300px) / (1300)));
+
 }
