@@ -21,19 +21,19 @@
   <nav>
     <div class="logo"><img src="icons/ma-logo.png"></div>
     <ul class="navbar">
-      <li class="navbar-item">
+      <li id="page0" class="navbar-item">
         <div><img src="icons/home.svg"></div>
         <div>home</div>
       </li>
-      <li class="navbar-item">
+      <li id="page1" class="navbar-item">
         <div><img src="icons/about.svg"></div>
         <div>about</div>
       </li>
-      <li class="navbar-item">
+      <li id="page2" class="navbar-item">
         <div><img src="icons/brands.svg"></div>
         <div>brands</div>
       </li>
-      <li class="navbar-item">
+      <li id="page3" class="navbar-item">
         <div><img src="icons/contact.svg"></div>
         <div>contact</div>
       </li>
@@ -110,6 +110,35 @@
         nextArrow: $('.next')
       });
       $('.about p').hyphenate('en-us');
+
+      $("#page0").click(function() {
+      $(".intro-container").hide("slide", {direction: "right"});
+      $(".brand-container").hide("slide", {direction: "right"});
+      $(".contact-container").hide("slide", {direction: "right"});
+      $(".container-slide").show("slide", {direction: "right"});
+      });
+
+      $("#page1").click(function() {
+      $(".container-slide").hide("slide", {direction: "right"});
+      $(".brand-container").hide("slide", {direction: "right"});
+      $(".contact-container").hide("slide", {direction: "right"});
+      $(".intro-container").show("slide", {direction: "right"});
+    });
+
+    $("#page2").click(function() {
+    $(".container-slide").hide("slide", {direction: "right"});
+    $(".intro-container").hide("slide", {direction: "right"});
+    $(".contact-container").hide("slide", {direction: "right"});
+    $(".brand-container").show("slide", {direction: "right"});
+  });
+
+  $("#page3").click(function() {
+  $(".container-slide").hide("slide", {direction: "right"});
+  $(".brand-container").hide("slide", {direction: "right"});
+  $(".intro-container").hide("slide", {direction: "right"});
+  $(".contact-container").show("slide", {direction: "right"});
+});
+
     });
   </script>
 </body>
