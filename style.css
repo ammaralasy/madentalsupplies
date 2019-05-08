@@ -59,11 +59,11 @@ nav {
   width: calc(75px + 5vw);
 }
 .navbar {
-  position: absolute;
+  position: fixed;
   width: 70%;
   height: 100%;
   left: 30%;
-  top: 8%;
+  bottom: 0;
   text-align: center;
   /*border: 2px black solid;*/
   }
