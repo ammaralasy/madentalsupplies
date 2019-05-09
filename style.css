@@ -106,7 +106,7 @@ nav {
 }
 #slideshow img {
   display: block;
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   margin: auto;
   border: 2px solid purple;
