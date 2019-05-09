@@ -38,7 +38,7 @@ nav {
   display: inline-block;
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   height: calc(50px + 5vw);
   background-color: #E30712;
   z-index: 5;
