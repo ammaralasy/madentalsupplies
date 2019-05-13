@@ -38,52 +38,74 @@ nav {
 width: 100%;
 height: 100%;
 }
-.nav-container {
+.navigation-container {
   width: 100%;
-  height: calc(50px + 5vw);
-  background-color: #E30712;
-  position: absolute;
-  top: calc(100% - (50px + 5vw));
+  height: calc(50px + 3vw);
+  background-color: red;
+  position: relative;
+  top: 0;
   z-index: 5;
+  /*top: calc(100% - (50px + 5vw));*/
 }
-.logo {
+.nav-list {
   position: absolute;
-  /*border: 2px black solid;*/
-  width: 30%;
+  top: 20%;
+  width: 100%;
   height: 100%;
-  top: calc(-20px - 2vw);
+}
+.nav-list li {
+  display: inline-block;
+}
+.nav-list > li {
+  width: 100%;
 }
 .logo img {
-  width: calc(75px + 5vw);
+  width: calc(70px + 5vw);
 }
 .navbar {
-  position: absolute;
-  width: 70%;
-  height: 100%;
-  left: 30%;
-  top: 8%;
-  text-align: center;
-  /*border: 2px black solid;*/
-  }
+  display: flex;
+  justify-content: space-around;
+}
 .navbar-item {
-  display: inline-block;
-  /*border: 2px black solid;*/
-  height: 100%;
-  width: 22%;
+/*width: 20%;
+text-align: center;*/
+/*border: 2px solid grey;*/
+text-align: center;
 }
 .navbar-item div:nth-of-type(2) {
   color: white;
   text-transform: uppercase;
-  font-size: calc(5px + 2vw);
+  font-size: calc(5px + 1.5vw);
   font-family: "poppins";
 }
-.navbar-item img {
-  width: calc(25px + 2vw);
+.navbar img {
+  width: calc(25px + 2vw);;
 }
 .navbar-item:nth-of-type(3) img{
   width: calc(30px + 2vw);
-
 }
+.logo {
+  /*width: 30%;
+  position: absolute; */
+  /*width: 25%;
+  border: 2px solid purple;*/
+}
+.nav-list > li:first-of-type {
+  /*border: 2px solid green;
+  width: 25%;
+  width: 30%;
+  height: auto;
+  position: absolute;
+  z-index: 6;*/
+}
+.nav-list > li:nth-of-type(2) {
+  width: 75%;
+  position: absolute;
+  left: 25%;
+  top: -20%;
+  /*border: 2px solid blue;*/
+}
+
 .container-slide {
   width: 100%;
   height: 95vh;
