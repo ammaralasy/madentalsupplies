@@ -40,8 +40,8 @@ height: 100%;
 }
 .navigation-container {
   width: 100%;
-  height: calc(50px + 3vw);
-  background-color: red;
+  height: calc(50px + 5vw);
+  background-color: #E30712;
   position: relative;
   top: 0;
   z-index: 5;
@@ -57,14 +57,17 @@ height: 100%;
   display: inline-block;
 }
 .nav-list > li {
-  width: 100%;
+  height: 100%;
 }
 .logo img {
-  width: calc(70px + 5vw);
+  width: calc(70px + 4vw);
 }
 .navbar {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 .navbar-item {
 /*width: 20%;
@@ -79,10 +82,10 @@ text-align: center;
   font-family: "poppins";
 }
 .navbar img {
-  width: calc(25px + 2vw);;
+  width: calc(20px + 2vw);
 }
 .navbar-item:nth-of-type(3) img{
-  width: calc(30px + 2vw);
+  width: calc(25px + 2vw);
 }
 .logo {
   /*width: 30%;
@@ -91,21 +94,34 @@ text-align: center;
   border: 2px solid purple;*/
 }
 .nav-list > li:first-of-type {
-  /*border: 2px solid green;
-  width: 25%;
-  width: 30%;
+  border: 2px solid green;
+  width: 22.5%;
+  /*width: 30%;
   height: auto;
   position: absolute;
   z-index: 6;*/
 }
 .nav-list > li:nth-of-type(2) {
-  width: 75%;
+  width: 77.5%;
   position: absolute;
-  left: 25%;
+  left: 22.5%;
   top: -20%;
-  /*border: 2px solid blue;*/
+  border: 2px solid blue;
 }
-
+/* This part for animating undelines below navigation buttons*/
+.clicked {
+  border: 2px solid white;
+  border-radius: 20%;
+  height: 3px;
+}
+.animate {
+  animation-name: vary-width;
+  animation-duration: 0.5s;
+}
+@keyframes vary-width {
+  0% {width: 0;}
+  100% {width: 100%;}
+}
 
 .container-slide {
   width: 100%;
@@ -114,7 +130,7 @@ text-align: center;
   background-color: rgba(227,7,18,0.3);
   border: 5px solid orange;
   position: absolute;
-  top: 0;
+  top: 5%;
   left: 0;
 }
 #slideshow {

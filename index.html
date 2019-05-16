@@ -28,20 +28,25 @@
       <li>
       <ul class="navbar">
         <li id="page0" class="navbar-item">
+
           <div><img src="icons/home.svg"></div>
           <div>home</div>
+          <div id="button0" class="clicked"></div>
         </li>
         <li id="page1" class="navbar-item">
           <div><img src="icons/about.svg"></div>
           <div>about</div>
+          <div id="button1"></div>
         </li>
         <li id="page2" class="navbar-item">
           <div><img src="icons/brands.svg"></div>
           <div>brands</div>
+          <div id="button2"></div>
         </li>
         <li id="page3" class="navbar-item">
           <div><img src="icons/contact.svg"></div>
           <div>contact</div>
+          <div id="button3"></div>
         </li>
       </ul>
     </li>
@@ -125,32 +130,44 @@
       $('.about p').hyphenate('en-us');
 
       $("#page0").click(function() {
-        $("nav").show("slide");
+      $("#button1 , #button2 , #button3").removeClass("clicked");
+      $("#button0").removeClass("animate");
+      $("#button0").addClass("clicked");
       $(".intro-container").hide("slide", {direction: "right"});
       $(".brand-container").hide("slide", {direction: "right"});
       $(".contact-container").hide("slide", {direction: "right"});
       $(".container-slide").show("slide", {direction: "right"});
+      $("#button0").addClass("animate");
       });
 
       $("#page1").click(function() {
+        $("#button0 , #button2 , #button3").removeClass("clicked");
+        $("#button1").removeClass("animate");
       $(".container-slide").hide("slide", {direction: "right"});
       $(".brand-container").hide("slide", {direction: "right"});
       $(".contact-container").hide("slide", {direction: "right"});
       $(".intro-container").show("slide", {direction: "right"});
+      $("#button1").addClass("animate clicked");
     });
 
     $("#page2").click(function() {
+      $("#button0 , #button1 , #button3").removeClass("clicked");
+      $("#button2").removeClass("animate");
     $(".container-slide").hide("slide", {direction: "right"});
     $(".intro-container").hide("slide", {direction: "right"});
     $(".contact-container").hide("slide", {direction: "right"});
     $(".brand-container").show("slide", {direction: "right"});
+    $("#button2").addClass("animate clicked");
   });
 
   $("#page3").click(function() {
+    $("#button0 , #button1 , #button2").removeClass("clicked");
+    $("#button3").removeClass("animate");
   $(".container-slide").hide("slide", {direction: "right"});
   $(".brand-container").hide("slide", {direction: "right"});
   $(".intro-container").hide("slide", {direction: "right"});
   $(".contact-container").show("slide", {direction: "right"});
+  $("#button3").addClass("animate clicked");
 });
 
     });
