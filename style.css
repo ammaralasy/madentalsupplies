@@ -233,10 +233,8 @@ position: absolute;
 
   /*position: relative;
   padding-top: 30%;*/
-  border: 2px black solid;
 }
 .logos div a {
-  border: 2px solid blue;
   display: flex;
   align-items: center;
   justify-content: center;
