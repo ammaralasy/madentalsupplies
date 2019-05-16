@@ -128,7 +128,7 @@ text-align: center;
   background-color: rgba(227,7,18,0.3);
   border: 5px solid orange;
   position: absolute;
-  top: -5%;
+  top: -4%;
   left: 0;
 }
 #slideshow {
@@ -186,7 +186,7 @@ position: absolute;
 .about h1 {
   color: #E30712;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 10%;
   margin-bottom: 4vw;
   font-family: "lora";
   font-size: calc(26px + (45 - 26) * ((100vw - 300px) / (1300)));
@@ -224,26 +224,34 @@ position: absolute;
   flex-wrap: wrap;
 }
 .logos div {
-  display: flex;
+  /*display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;*/
   width: 50%;
   height: auto;
   margin-bottom: 5px;
+
   /*position: relative;
   padding-top: 30%;*/
-  /*border: 2px black solid;*/
+  border: 2px black solid;
+}
+.logos div a {
+  border: 2px solid blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .logos img {
   /*position: absolute;
   left: 20;
   top: 0;*/
+  display: block;
 border: 1px #D6DBDF solid;
 border-radius: 50%;
 box-shadow: 0 3px #D6DBDF;
-width: 75%;
+width: 70%;
 height: auto;
-max-width: 170px;
+max-width: 200px;
 }
 .brands {
   width: 100%;
@@ -258,6 +266,8 @@ max-width: 170px;
   padding-top: 30px;
   padding-left: 10px;
   padding-bottom: 10px;
+  margin-top: 5%;
+  font-size: calc(26px + (45 - 26) * ((100vw - 300px) / (1300)));
 }
 
 
@@ -274,6 +284,8 @@ max-width: 170px;
   padding-top: 30px;
   padding-left: 10px;
   padding-bottom: 30px;
+  margin-top: 5%;
+  font-size: calc(26px + (45 - 26) * ((100vw - 300px) / (1300)));
 }
 .contact-container ul {
   /*position: relative;*/
