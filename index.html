@@ -22,41 +22,47 @@
   <nav>
     <div class="navigation-container">
       <ul class="nav-list">
-      <li class="logo-list">
-        <div class="logo"><img src="icons/ma-logo.png"></div>
-      </li>
-      <li>
-      <ul class="navbar">
-        <li id="page0" class="navbar-item">
+        <li class="logo-list">
+          <div class="logo"><img src="icons/ma-logo.png"></div>
+        </li>
+        <li>
+          <ul class="navbar">
+            <li id="page0" class="navbar-item">
 
-          <div><img src="icons/home.svg"></div>
-          <div>home</div>
-          <div id="button0" class="clicked"></div>
-        </li>
-        <li id="page1" class="navbar-item">
-          <div><img src="icons/about.svg"></div>
-          <div>about</div>
-          <div id="button1"></div>
-        </li>
-        <li id="page2" class="navbar-item">
-          <div><img src="icons/brands.svg"></div>
-          <div>brands</div>
-          <div id="button2"></div>
-        </li>
-        <li id="page3" class="navbar-item">
-          <div><img src="icons/contact.svg"></div>
-          <div>contact</div>
-          <div id="button3"></div>
+              <div><img src="icons/home.svg"></div>
+              <div>home</div>
+              <div id="button0" class="clicked"></div>
+            </li>
+            <li id="page1" class="navbar-item">
+              <div><img src="icons/about.svg"></div>
+              <div>about</div>
+              <div id="button1"></div>
+            </li>
+            <li id="page2" class="navbar-item">
+              <div><img src="icons/brands.svg"></div>
+              <div>brands</div>
+              <div id="button2"></div>
+            </li>
+            <li id="page3" class="navbar-item">
+              <div><img src="icons/contact.svg"></div>
+              <div>contact</div>
+              <div id="button3"></div>
+            </li>
+          </ul>
         </li>
       </ul>
-    </li>
-    </ul>
     </div>
   </nav>
 
   <div class="container-slide">
     <div id="slideshow">
-      <div><img src="assets/medental-sm-4.png" alt=""></div>
+      <div>
+        <picture>
+          <source media="(min-width: 768px) and (orientation: landscape)" srcset="assets/medental-lg.png">
+          <source media="(min-width: 768px) and (orientation: portrait)" srcset="assets/medental-md.png">
+          <img src="assets/medental-sm-4.png" alt="Medental Products">
+        </picture>
+      </div>
       <div><img src="assets/protechno-sm.jpg" alt=""></div>
     </div>
   </div>
@@ -67,22 +73,22 @@
       <p><b>Mohammed Alasbahi for tradig</b> dental supplies is one of the biggest and leading dental company in Yemen. Our Mission is to provide dental products of good quality to our customers across the whole of Yemen, given that our task is to
         expand our business activities to make it accesible for all customers and dealers across Yemen.</p>
       <p>Since we were established in 1996, we provide broad spectrum of products for lab technicians and dentists at the time the dental sector was not given proper care in Yemen. We constantly work on finding new partners every year which are able
-        to cooperate with us to supply our customers the correct choice of products that will help us implement our mission.</p>
+        to cooperate with us to supply our customers the correct choice of products that will help us implement our mission.<span> Our devotion to providing customers with good quality product at a reasonable price is our first priority.</span> </p>
     </div>
   </div>
 
   <div class="brand-container">
     <div class="brands">
-    <h1>our brands</h1>
+      <h1>our brands</h1>
     </div>
-      <div class="logos">
-        <div><a href="http://www.atlas-enta.com.tr/g-ceram/" target="_blank" rel="noopener"><img src="assets/logos/ceram-logo-sm-1.png" alt="G-ceram"></a></div>
-        <div><a href="https://www.ibexdental.com/" target="_blank" rel="noopener"><img src="assets/logos/ibex-logo-sm-1.png" alt="Ibex Dental"></a></div>
-        <div><a href="http://medentalinternational.com/" target="_blank" rel="noopener"><img src="assets/logos/medental-logo-sm-1.jpg" alt="Medental International"></a></div>
-        <div><a href="http://protechno.com/" target="_blank" rel="noopener"><img src="assets/logos/protechno-logo-sm-1.jpg" alt="Protechno"></a></div>
-        <div><a href="http://www.en.omegadent.ru/" target="_blank" rel="noopener"><img src="assets/logos/omegadent-logo-sm-2.jpg" alt="Omega Dent"></a></div>
-        <div><a href="http://www.vanninidental.com/" target="_blank" rel="noopener"><img src="assets/logos/vannini-logo-sm-1.jpg" alt="Vannini Dental"></a></div>
-      </div>
+    <div class="logos">
+      <div><a href="http://www.atlas-enta.com.tr/g-ceram/" target="_blank" rel="noopener"><img src="assets/logos/ceram-logo-sm-1.png" alt="G-ceram"></a></div>
+      <div><a href="https://www.ibexdental.com/" target="_blank" rel="noopener"><img src="assets/logos/ibex-logo-sm-1.png" alt="Ibex Dental"></a></div>
+      <div><a href="http://medentalinternational.com/" target="_blank" rel="noopener"><img src="assets/logos/medental-logo-sm-1.jpg" alt="Medental International"></a></div>
+      <div><a href="http://protechno.com/" target="_blank" rel="noopener"><img src="assets/logos/protechno-logo-sm-1.jpg" alt="Protechno"></a></div>
+      <div><a href="http://www.en.omegadent.ru/" target="_blank" rel="noopener"><img src="assets/logos/omegadent-logo-sm-2.jpg" alt="Omega Dent"></a></div>
+      <div><a href="http://www.vanninidental.com/" target="_blank" rel="noopener"><img src="assets/logos/vannini-logo-sm-1.jpg" alt="Vannini Dental"></a></div>
+    </div>
   </div>
 
   <div class="contact-container">
@@ -130,45 +136,77 @@
       $('.about p').hyphenate('en-us');
 
       $("#page0").click(function() {
-      $("#button1 , #button2 , #button3").removeClass("clicked");
-      $("#button0").removeClass("animate");
-      $("#button0").addClass("clicked");
-      $(".intro-container").hide("slide", {direction: "right"});
-      $(".brand-container").hide("slide", {direction: "right"});
-      $(".contact-container").hide("slide", {direction: "right"});
-      $(".container-slide").show("slide", {direction: "right"});
-      $("#button0").addClass("animate");
+        $("#button1 , #button2 , #button3").removeClass("clicked");
+        $("#button0").removeClass("animate");
+        $("#button0").addClass("clicked");
+        $(".intro-container").hide("slide", {
+          direction: "right"
+        });
+        $(".brand-container").hide("slide", {
+          direction: "right"
+        });
+        $(".contact-container").hide("slide", {
+          direction: "right"
+        });
+        $(".container-slide").show("slide", {
+          direction: "right"
+        });
+        $("#button0").addClass("animate");
       });
 
       $("#page1").click(function() {
         $("#button0 , #button2 , #button3").removeClass("clicked");
         $("#button1").removeClass("animate");
-      $(".container-slide").hide("slide", {direction: "right"});
-      $(".brand-container").hide("slide", {direction: "right"});
-      $(".contact-container").hide("slide", {direction: "right"});
-      $(".intro-container").show("slide", {direction: "right"});
-      $("#button1").addClass("animate clicked");
-    });
+        $(".container-slide").hide("slide", {
+          direction: "right"
+        });
+        $(".brand-container").hide("slide", {
+          direction: "right"
+        });
+        $(".contact-container").hide("slide", {
+          direction: "right"
+        });
+        $(".intro-container").show("slide", {
+          direction: "right"
+        });
+        $("#button1").addClass("animate clicked");
+      });
 
-    $("#page2").click(function() {
-      $("#button0 , #button1 , #button3").removeClass("clicked");
-      $("#button2").removeClass("animate");
-    $(".container-slide").hide("slide", {direction: "right"});
-    $(".intro-container").hide("slide", {direction: "right"});
-    $(".contact-container").hide("slide", {direction: "right"});
-    $(".brand-container").show("slide", {direction: "right"});
-    $("#button2").addClass("animate clicked");
-  });
+      $("#page2").click(function() {
+        $("#button0 , #button1 , #button3").removeClass("clicked");
+        $("#button2").removeClass("animate");
+        $(".container-slide").hide("slide", {
+          direction: "right"
+        });
+        $(".intro-container").hide("slide", {
+          direction: "right"
+        });
+        $(".contact-container").hide("slide", {
+          direction: "right"
+        });
+        $(".brand-container").show("slide", {
+          direction: "right"
+        });
+        $("#button2").addClass("animate clicked");
+      });
 
-  $("#page3").click(function() {
-    $("#button0 , #button1 , #button2").removeClass("clicked");
-    $("#button3").removeClass("animate");
-  $(".container-slide").hide("slide", {direction: "right"});
-  $(".brand-container").hide("slide", {direction: "right"});
-  $(".intro-container").hide("slide", {direction: "right"});
-  $(".contact-container").show("slide", {direction: "right"});
-  $("#button3").addClass("animate clicked");
-});
+      $("#page3").click(function() {
+        $("#button0 , #button1 , #button2").removeClass("clicked");
+        $("#button3").removeClass("animate");
+        $(".container-slide").hide("slide", {
+          direction: "right"
+        });
+        $(".brand-container").hide("slide", {
+          direction: "right"
+        });
+        $(".intro-container").hide("slide", {
+          direction: "right"
+        });
+        $(".contact-container").show("slide", {
+          direction: "right"
+        });
+        $("#button3").addClass("animate clicked");
+      });
 
     });
   </script>

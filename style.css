@@ -21,6 +21,7 @@ html {
 }
   nav > .navigation-container {
     width: calc(90px + 5vw);
+    min-height: 680px;
     height: 100%;
     left: 0;
   }
@@ -28,36 +29,70 @@ html {
   .nav-list .navbar {
     flex-flow: column;
   align-items: center;
+  justify-content: flex-start;
   margin: 0 10%;
   }
   .logo-list {
     margin: 0 7%;
   }
   .navigation-container > .nav-list > li:first-of-type {
-    height: 25%;
+    height: 20%;
+    width: calc(90px + 5vw);
     position: absolute;
     top: 5%;
   }
   .navigation-container > .nav-list > li:nth-of-type(2) {
     height: 60%;
     left: 0;
-    top: 22.5%;
+    top: 25%;
+  }
+  .navbar .navbar-item {
+    margin-bottom: 25%;
+  }
+  .navbar-item:nth-of-type(2) img {
+    margin-left: 8px;
+  }
+  .nav-list  .navbar img {
+    width: calc(15px + 2vw);
   }
   body > .brand-container {
     top: 0;
     width: 70%;
-    height: 80%;
-    border: solid 2px orange;
+    height: 70%;
     margin: 5% 20%;
   }
   body > .contact-container {
     top: 0;
+    left: 22.5%;
+    width: 70%;
+    margin: 5% 0;
+  }
+  body > .contact-container h1 {
+    margin-top: 0;
+    padding-left: 1%;
+  }
+  body > .contact-container ul {
+    margin-left: 0;
   }
   body > .intro-container {
     top: 0;
+    margin-top: 0;
+    height: 100%;
+    background-image: url(assets/dent-office-bg.png) , url(assets/dent-lab-bg.png);
+    background-size: 70% 50%, 70% 50%;
+    left: 3%;
   }
     body > .container-slide {
       top: 0;
+    }
+    .container-slide > #slideshow > div {
+      left: 10%;
+    }
+    .container-slide > #slideshow img {
+      max-width: 90%;
+    }
+    .brand-container > .logos {
+      margin-left: -5%;
     }
     .brand-container > .logos  div {
       width: 33%;
@@ -66,14 +101,42 @@ html {
     .brand-container .brands h1 {
       margin: 0;
     }
+    .brand-container > .logos img {
+      width: 70%;
+      max-width: 180px;
+    }
     .navigation-container .nav-list {
       top: 0;
     }
     .intro-container .about {
       width: 60%;
     }
-
+    .intro-container .about span {
+      display: inline;
+    }
+    .intro-container .about h1 {
+      margin-top: 12%;
+    }
 }
+
+@media all and (height: 100vmax) and (min-width: 768px) {
+  .navigation-container > .nav-list > li:first-of-type {
+    height: 10%;
+  }
+  .navigation-container > .nav-list > li:nth-of-type(2) {
+    top: 20%;
+  }
+  body > .intro-container {
+  height: 70%;
+  }
+  .container-slide > #slideshow > div {
+    left: 12.5%;
+  }
+  .container-slide > #slideshow {
+    top: 2.5%;
+  }
+}
+
 * {
   box-sizing: border-box;
   text-decoration: none;
@@ -142,7 +205,7 @@ text-align: center;
   font-family: "poppins";
 }
 .navbar img {
-  width: calc(15px + 2vw);
+  width: calc(15px + 3vw);
 }
 .navbar-item:nth-of-type(3) img{
   width: calc(20px + 2vw);
@@ -193,25 +256,29 @@ text-align: center;
 }
 #slideshow {
   width: 100%;
- height: 96%;
+ height: 95%;
   border: 5px green solid;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+
 
   /*position: relative;
   left: 5%;*/
 }
 #slideshow > div {
-  width: 100%;
+  width: 90%;
   height: 100%;
   border: 8px solid blue;
   margin: auto;
+  position: absolute;
+  /*top: 15%;*/
   /*overflow: hidden;*/
 }
 #slideshow img {
   display: block;
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
   margin: auto;
   border: 2px solid purple;
@@ -256,6 +323,9 @@ position: absolute;
   font-size: calc(16px + (25 - 16) * ((100vw - 300px) / (1300)));
   margin: auto;
 }
+.about span {
+  display: none;
+}
 .about p b {
   font-family: "lora";
 }
@@ -276,6 +346,7 @@ position: absolute;
   position: absolute;
   top: 0;
   left: 0;
+  margin: 0;
 }
 .logos {
   display: flex;
@@ -311,7 +382,7 @@ border-radius: 50%;
 box-shadow: 0 3px #D6DBDF;
 width: 60%;
 height: auto;
-max-width: 180px;
+max-width: 150px;
 }
 .brands {
   width: 100%;
@@ -324,9 +395,9 @@ max-width: 180px;
   text-transform: uppercase;
   font-family: "lora";
   padding-top: 30px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  margin-top: 25%;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  margin-top: 20%;
   font-size: calc(26px + (50 - 26) * ((100vw - 300px) / (1300)));
 }
 
@@ -334,7 +405,7 @@ max-width: 180px;
 .contact-container {
   display: none;
   position: absolute;
-  top: 12%;
+  top: 0;
   left: 0;
 }
 .contact-container h1 {
@@ -342,9 +413,9 @@ max-width: 180px;
   text-transform: uppercase;
   font-family: "lora";
   padding-top: 30px;
-  padding-left: 10px;
+  padding-left: 30px;
   padding-bottom: 30px;
-  margin-top: 5%;
+  margin-top: 20%;
   font-size: calc(26px + (45 - 26) * ((100vw - 300px) / (1300)));
 }
 .contact-container ul {
@@ -353,6 +424,7 @@ max-width: 180px;
   width: 100%;
   list-style: none;
   align-items: center;
+  margin-left: 5%;
 }
 .contact-container ul:nth-of-type(2) {
   margin-bottom: 30px;
@@ -366,7 +438,7 @@ max-width: 180px;
   display: flex;
 }
 .contact-container ul img {
-  width: calc(15px + 2vw);
+  width: calc(15px + 1vw);
   /*border: 2px solid #E30712;
   padding: 10%;
   border-radius: 50%;*/
