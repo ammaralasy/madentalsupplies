@@ -208,7 +208,7 @@ text-align: center;
   width: calc(15px + 3vw);
 }
 .navbar-item:nth-of-type(3) img{
-  width: calc(20px + 2vw);
+  width: calc(20px + 3vw);
 }
 .logo {
   /*width: 30%;
