@@ -130,12 +130,14 @@ html {
   height: 70%;
   }
   .container-slide > #slideshow > div {
-    left: 12.5%;
+    left: 13%;
   }
   .container-slide > #slideshow {
     top: 0;
-  }
+    }
+    
 }
+
 
 * {
   box-sizing: border-box;
@@ -248,8 +250,8 @@ text-align: center;
   width: 100%;
   height: 100%;
   background-image: url("logo-bg-1.png");
-  background-color: rgba(227,7,18,0.3);
-  border: 5px solid orange;
+  /*background-color: rgba(227,7,18,0.3);*/
+  /*border: 5px solid orange;*/
   position: absolute;
   top: 0;
   left: 0;
@@ -257,7 +259,7 @@ text-align: center;
 #slideshow {
   width: 100%;
  height: 100%;
-  border: 5px green solid;
+  /*border: 5px green solid;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -271,7 +273,7 @@ text-align: center;
 #slideshow > div {
   width: 90%;
   height: 100%;
-  border: 8px solid blue;
+  /*border: 8px solid blue;*/
   margin: auto;
   position: absolute;
   /*top: 15%;*/
@@ -282,7 +284,7 @@ text-align: center;
   max-width: 100%;
   height: auto;
   margin: auto;
-  border: 2px solid purple;
+  /*border: 2px solid purple;*/
 }
 .slick-dots {
   top: 95%;
