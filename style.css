@@ -271,7 +271,7 @@ text-align: center;
   left: 5%;*/
 }
 #slideshow > div {
-  width: 50%;
+  width: 90%;
   height: 100%;
   /*border: 8px solid blue;*/
   position: absolute;
@@ -290,6 +290,7 @@ text-align: center;
 .slick-dots {
   top: 95%;
   height: 5%;
+  left: 0;
 }
 
 
