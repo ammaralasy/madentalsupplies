@@ -271,7 +271,7 @@ text-align: center;
   left: 5%;*/
 }
 #slideshow > div {
-  width: 90%;
+  width: 50%;
   height: 100%;
   /*border: 8px solid blue;*/
   position: absolute;
@@ -284,7 +284,6 @@ text-align: center;
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  position: absolute;
   /*margin: auto;*/
   /*border: 2px solid purple;*/
 }
