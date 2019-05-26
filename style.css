@@ -284,13 +284,13 @@ text-align: center;
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  position: absolute;
   /*margin: auto;*/
   /*border: 2px solid purple;*/
 }
 .slick-dots {
   top: 95%;
   height: 5%;
-  width:100%;
 }
 
 
