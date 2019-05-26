@@ -261,7 +261,7 @@ text-align: center;
  height: 100%;
   /*border: 5px green solid;*/
   display: flex;
-  justify-content: center;
+  /*justify-content: center;*/
   align-items: center;
   position: absolute;
   left: 0;
@@ -276,7 +276,7 @@ text-align: center;
   height: 100%;
   /*border: 8px solid blue;*/
   position: absolute;
-  left: 0;
+  left: 5%;
   /*top: 15%;*/
   /*overflow: hidden;*/
 }
@@ -292,7 +292,6 @@ text-align: center;
 .slick-dots {
   top: 95%;
   height: 5%;
-  left: 0;
 }
 
 
