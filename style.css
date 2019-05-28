@@ -15,8 +15,14 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'montserrat-reg';
+  src: url(fonts/Montserrat-Regular.ttf);
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'montserrat-light';
-  src: url(fontsMontserrat-Light.ttf);
+  src: url(fonts/Montserrat-Light.ttf);
   font-style: normal;
 }
 @font-face {
