@@ -10,6 +10,16 @@
   font-weight: 900;
 }
 @font-face {
+  font-family: 'montserrat-reg';
+  src: url(fonts/Montserrat-Regular.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montserrat-bold';
+  src: url(fonts/Montserrat-Bold.ttf);
+  font-style: normal;
+}
+@font-face {
   font-family: 'lora-light';
   src: url(fonts/lora-light.ttf);
   font-style: normal;
@@ -203,8 +213,9 @@ text-align: center;
 .navbar-item div:nth-of-type(2) {
   color: white;
   text-transform: uppercase;
-  font-size: calc(5px + 1.25vw);
-  font-family: "poppins";
+  font-size: calc(4px + 1.25vw);
+  font-family: "montserrat-reg";
+  /*font-family: "poppins";*/
 }
 .navbar img {
   width: calc(15px + 3vw);
@@ -322,11 +333,13 @@ position: absolute;
   text-transform: uppercase;
   margin-top: 10%;
   margin-bottom: 2vw;
-  font-family: "lora";
+  /*font-family: "lora";*/
+  font-family: "montserrat-bold";
   font-size: calc(26px + (45 - 26) * ((100vw - 300px) / (1300)));
 }
 .about p {
-  font-family: "lora-light";
+  /*font-family: "lora-light";*/
+  font-family: "montserrat-reg";
   font-size: calc(16px + (25 - 16) * ((100vw - 300px) / (1300)));
   margin: auto;
 }
@@ -334,7 +347,8 @@ position: absolute;
   display: none;
 }
 .about p b {
-  font-family: "lora";
+  /*font-family: "lora";*/
+  font-family: "montserrat-bold";
 }
 .about p:first-of-type {
   margin-bottom: 10px;
@@ -400,7 +414,8 @@ max-width: 150px;
   height: 20%;
   color: #E30712;
   text-transform: uppercase;
-  font-family: "lora";
+  /*font-family: "lora";*/
+  font-family: "montserrat-bold";
   padding-top: 30px;
   padding-left: 30px;
   padding-bottom: 30px;
@@ -418,7 +433,8 @@ max-width: 150px;
 .contact-container h1 {
   color: #E30712;
   text-transform: uppercase;
-  font-family: "lora";
+  /*font-family: "lora";*/
+  font-family: "montserrat-bold";
   padding-top: 30px;
   padding-left: 30px;
   padding-bottom: 30px;
@@ -468,7 +484,8 @@ align-items: center;
 .contact-container ul li:nth-of-type(2) {
 width:85%;
 /*border: 2px solid blue;*/
-font-family: "lora-light";
+/*font-family: "lora-light";*/
+font-family: "montserrat-reg";
 font-size: calc(16px + (30 - 16) * ((100vw - 300px) / (1300)));
 
 }
