@@ -10,13 +10,13 @@
   font-weight: 900;
 }
 @font-face {
-  font-family: 'montserrat-reg';
-  src: url(fonts/Montserrat-Regular.ttf);
+  font-family: 'montserrat-bold';
+  src: url(fonts/Montserrat-Bold.ttf);
   font-style: normal;
 }
 @font-face {
-  font-family: 'montserrat-bold';
-  src: url(fonts/Montserrat-Bold.ttf);
+  font-family: 'montserrat-light';
+  src: url(fontsMontserrat-Light.ttf);
   font-style: normal;
 }
 @font-face {
@@ -339,7 +339,7 @@ position: absolute;
 }
 .about p {
   /*font-family: "lora-light";*/
-  font-family: "montserrat-reg";
+  font-family: "montserrat-light";
   font-size: calc(16px + (25 - 16) * ((100vw - 300px) / (1300)));
   margin: auto;
 }
