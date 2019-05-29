@@ -215,6 +215,7 @@ height: 100%;
 text-align: center;*/
 /*border: 2px solid grey;*/
 text-align: center;
+height:60%;
 }
 .navbar-item div:nth-of-type(2) {
   color: white;
@@ -225,6 +226,9 @@ text-align: center;
 }
 .navbar img {
   width: calc(15px + 3vw);
+}
+.navbar-item:nth-of-type(3) {
+  margin-top: -3%;
 }
 .navbar-item:nth-of-type(3) img{
   width: calc(20px + 3vw);
@@ -346,7 +350,7 @@ position: absolute;
 .about p {
   /*font-family: "lora-light";*/
   font-family: "montserrat-light";
-  font-size: calc(16px + (25 - 16) * ((100vw - 300px) / (1300)));
+  font-size: calc(14px + (25 - 16) * ((100vw - 300px) / (1300)));
   margin: auto;
 }
 .about span {
@@ -450,7 +454,7 @@ max-width: 150px;
 .contact-container ul {
   /*position: relative;*/
   display: flex;
-  width: 100%;
+  width: 95%;
   list-style: none;
   align-items: center;
   margin-left: 5%;
