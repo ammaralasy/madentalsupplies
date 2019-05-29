@@ -430,7 +430,7 @@ max-width: 150px;
   padding-left: 30px;
   padding-bottom: 30px;
   margin-top: 20%;
-  font-size: calc(26px + (50 - 26) * ((100vw - 300px) / (1300)));
+  font-size: calc(26px + (45 - 26) * ((100vw - 300px) / (1300)));
 }
 
 
